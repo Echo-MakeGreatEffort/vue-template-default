@@ -9,7 +9,7 @@
         "lint": "npx lint-staged",
         "commit": "npx git-cz",
         "lint:commit": "npm run lint && npm run commit",
-        "prepare": "husky install"
+        "prepare": "npx husky init"
     },
     "dependencies": {
         "core-js": "^3.8.3",
@@ -52,7 +52,7 @@
         "rules": {}
     },
     "lint-staged": {
-        "*.js": [
+        "*.{js,jsx,ts,tsx,html}": [
             "prettier --write",
             "eslint --fix"
         ],
