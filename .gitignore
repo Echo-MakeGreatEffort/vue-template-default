@@ -21,3 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+!.prettierrc.js
+!.stylelintrc.js
+!.eslintrc.js
